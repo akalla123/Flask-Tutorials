@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	<title>
+		Rendering HTML pages using Flask
+	</title>
+</head>
+<body>
+Hello, Welcome to this Flask Server<br>
+Follow the <a href={{ url_for('signup') }}>link</a> to singup. 
+	
+</div>
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>

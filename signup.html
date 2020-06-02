@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	<title>
+		Sign Up Page 
+	</title>
+</head>
+<body>
+<form action="{{ url_for('success') }}" method="post">
+	<input type="text" name="fname" id="first_name" placeholder="First Name"><br>
+	<input type="text" name="lname" id="last_name" placeholder="Last Name"><br>
+	<input type="email" name="email" id="Email" placeholder="Email Address"><br>
+	<input type="password" name="pass" id="password" placeholder="Password"><br>
+	<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
